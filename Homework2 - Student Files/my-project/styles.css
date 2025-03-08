@@ -1,0 +1,23 @@
+.Title {
+font-family: sans-serif;
+text-align: center;
+font-size: x-large;
+font-weight: bold;
+color: white;
+}
+
+p{
+    background-color: #273544;
+}
+.searchbar{
+    background-color: #2C3F54;
+}
+
+.search{
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(44, 63, 84, 1);
+}
+
+.center{
+    text-align: center;
+}
