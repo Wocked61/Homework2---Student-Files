@@ -7,19 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    
     <p class="Title">Movie Explorer</p>
-    <!-- ToDO -->
-     <div class="center">
+    <div class="centerSearch">
     <input class="search" type="text" placeholder="Search for a movie...">
     <label for="sort"></label>
 
-<select name="sort" id="sort">
+<select class="search" name="sort" id="sort">
+    <option value="SortBy">Sort By</option>
   <option value="ReleaseAsc">Release Date (Asc)</option>
   <option value="ReleaseDesc">Release Date (Desc)</option>
   <option value="RatingAsc">Rating (Asc)</option>
   <option value="RatingDesc">Rating (Desc)</option>
 </select>
 </div>
+
+<footer>
+    <div class="center">
+    <button class="button">Previous</button>
+    <p>Page</p>
+    <button class="button">Next</button>
+    </div>
+</footer>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

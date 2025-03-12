@@ -1,23 +1,44 @@
 .Title {
 font-family: sans-serif;
 text-align: center;
-font-size: x-large;
+font-size: 3rem;
 font-weight: bold;
 color: white;
+height: 5rem;
+background-color: #273544;
+padding: rem;
+margin: 0;
 }
 
-p{
-    background-color: #273544;
-}
-.searchbar{
-    background-color: #2C3F54;
+.center{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 .search{
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(44, 63, 84, 1);
+    height: 1.5rem;
+
 }
 
-.center{
+.centerSearch{
     text-align: center;
+    background-color: #2C3F54;
+    padding: 2rem;
+}   
+
+.button{
+    background-color: #2F8CD4;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 2rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
 }
