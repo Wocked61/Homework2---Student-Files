@@ -42,3 +42,40 @@ body{
     margin: 0;
     padding: 0;
 }
+
+.picture{
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.pictureText{
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.pictureDesc{
+    font-weight: normal;
+    text-align: center;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.5)
+}
+
+.box img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
