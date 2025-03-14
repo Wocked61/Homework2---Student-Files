@@ -27,13 +27,13 @@ function fetchMovies(page, sortOption, searchQuery) {
   if (searchQuery) {
     url = `https://api.themoviedb.org/3/search/movie?query=${searchQuery}&language=en-US&page=${page}`;
   } else if (sortOption === 'ReleaseAsc') {
-    url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=release_date.asc`;
+    url = `https://api.themoviedb.org/3/discover/movie?certification.gte=0&include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=release_date.asc`;
   } else if (sortOption === 'ReleaseDesc') {
-    url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=release_date.desc`;
+    url = `https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=${page}&sort_by=release_date.desc`;
   } else if (sortOption === 'RatingAsc') {
-    url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=vote_average.asc`;
+    url = `https://api.themoviedb.org/3/discover/movie?certification.gte=0&include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=vote_average.asc`;
   } else if (sortOption === 'RatingDesc') {
-    url = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=${page}&sort_by=vote_average.desc`;
+    url = `https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=${page}`;
   }
 
   fetch(url, options)
