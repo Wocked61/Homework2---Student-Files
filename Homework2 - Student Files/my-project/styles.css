@@ -4,16 +4,16 @@
     font-size: 3rem;
     font-weight: bold;
     color: white;
-    height: 5rem;
+    height: 6rem;
     background-color: #273544;
     padding: rem;
     margin: 0;
   }
   
   .center {
-    text-align: center;
-    flex-wrap: wrap;
-    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    display:flex;
     justify-content: center;
   }
   
@@ -27,14 +27,6 @@
     text-align: center;
     background-color: #2c3f54;
     padding: 2rem;
-  }
-  
-  .button {
-    background-color: #2f8cd4;
-    color: white;
-    border-radius: 6px;
-    border: none;
-    height: 2rem;
   }
   
   body {
@@ -65,10 +57,10 @@
   
   .box {
     width: 300px;
-    height: 500px;
-    margin: 3.5rem;
+    height: 600px;
+    margin: 1rem;
     border-radius: 10px;
-    padding: 2.5rem;
+    padding: 4rem;
     box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.5);
   }
   
@@ -82,4 +74,26 @@
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
+  .centerPage{
+    text-align: center;
+    align-items: center;
+  }
+
+  .button {
+    background-color: #2f8cd4;
+    color: white;
+    border-radius: 6px;
+    border: none;
+    height: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem; 
+    transition-duration: 0.1s;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: #2473AE;
+    color: white;
+  }
