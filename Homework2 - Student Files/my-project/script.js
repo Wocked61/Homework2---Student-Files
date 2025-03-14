@@ -32,7 +32,7 @@ function showMovies(data) {
     <div class="box">
       <img class="Picture" src="${IMG_URL+ poster_path}" alt="${title}" id="Movie_Picture">
       <div>
-          <p class="pictureText" id="Movie_Title">${title}</p>
+          <h1 class="pictureText" id="Movie_Title">${title}</h1>
           <p class="pictureDesc" id="Movie_Release">${"Release Date: "+release_date}</p>
           <p class="pictureDesc" id="Movie_Rating">${"Rating: "+vote_average}</p>
       </div>
@@ -43,9 +43,9 @@ function showMovies(data) {
 
   });
 
-  const movie_search = document.getElementById("Movie_id").value.toLowerCase();
-  const page = data.page;
-  const total_pages = data.total_pages;
+  // const movie_search = document.getElementById("Movie_id").value.toLowerCase();
+  // const page = data.page;
+  // const total_pages = data.total_pages;
  
 }
 
