@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
+
     <header>
 
         <p class="Title">Movie Explorer</p>
         <div class="centerSearch">
-            <input class="search" type="text" placeholder="Search for a movie...">
+            <input class="search" type="text" id="Movie_id" placeholder="Search for a movie...">
 
 
             <label for="sort"></label>
@@ -28,46 +28,31 @@
             </select>
         </div>
     </header>
-<main>
-  <div class="box">
-    <img class="Picture" src="https://play-lh.googleusercontent.com/xu-QRRdES_4ChdqrocEp7Dy4jtkST123_EX6wJ5pCq2VE7v4aSgt_Zw946h5DkN3iA" alt="Image">
-    <div>
-        <p class="pictureText">Movie Title</p>
-        <p class="pictureDesc">Release date</p>
-        <p class="pictureDesc">10</p>
-    </div>
-  </div>
-  <div class="box">
-    <img class="Picture" src="https://play-lh.googleusercontent.com/xu-QRRdES_4ChdqrocEp7Dy4jtkST123_EX6wJ5pCq2VE7v4aSgt_Zw946h5DkN3iA" alt="OMGITSMIKU">
-    <div>
-        <p class="pictureText">Movie Title</p>
-        <p class="pictureDesc">Release date</p>
-        <p class="pictureDesc">9</p>
-    </div>
-  </div>
-
-  <div class="box">
-    <img class="Picture" src="https://play-lh.googleusercontent.com/xu-QRRdES_4ChdqrocEp7Dy4jtkST123_EX6wJ5pCq2VE7v4aSgt_Zw946h5DkN3iA" alt="Image">
-    <div>
-        <p class="pictureText">Movie Title</p>
-        <p class="pictureDesc">Release date</p>
-        <p class="pictureDesc">8</p>
-    </div>
-  </div>
-        <footer>
-        <div class="center">
-            <button class="button">Previous</button>
-            <p> # page #</p>
-            <button class="button">Next</button>
+    <main id="main">
+        <div class="box">
+            <img class="Picture"
+                src="https://play-lh.googleusercontent.com/xu-QRRdES_4ChdqrocEp7Dy4jtkST123_EX6wJ5pCq2VE7v4aSgt_Zw946h5DkN3iA"
+                alt="Movie Image" id="Movie_Picture">
+            <div>
+                <p class="pictureText" id="Movie_Title">Movie Title</p>
+                <p class="pictureDesc" id="Movie_Release">Release Date</p>
+                <p class="pictureDesc" id="Movie_Rating">Rating</p>
+            </div>
         </div>
+
+        </div>
+        <footer>
+            <div class="center">
+                <button class="button">Previous</button>
+                <p id="page"></p>
+                <button class="button">Next</button>
+
+    </main>
     </footer>
-</main>
 
 
 
-
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>
